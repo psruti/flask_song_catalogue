@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+ {% block content%}
+ <div class = "container publisher">
+    <h4> Songs by {{ publisher.name }} </h4>
+    <ol>
+        {% for song in publisher_songs %}
+            <li type="1">
+                {{ song.title }} by {{ song.singers }}
+            </li>
+        {% endfor %}
+    </ol>
+ </div>>
+{% endblock content %}
